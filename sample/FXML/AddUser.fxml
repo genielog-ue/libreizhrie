@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="253.0" layoutY="14.0" text="Ajouter un usager" />
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#ButtonChangeScene" text="Retourner Scene principale" userData="FXML/Hub.fxml" />
+      <Button layoutX="492.0" layoutY="361.0" mnemonicParsing="false" text="Ajouter usager" />
+      <GridPane layoutX="39.0" layoutY="48.0" prefHeight="310.0" prefWidth="523.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="391.0" minWidth="0.0" prefWidth="102.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="421.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="91.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="185.0" minHeight="0.0" prefHeight="66.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="309.0" minHeight="10.0" prefHeight="117.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="253.0" minHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="253.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField GridPane.columnIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Nom :" />
+            <Label prefHeight="17.0" prefWidth="69.0" text="Prenom :" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Age :" GridPane.rowIndex="2" />
+            <Label prefWidth="70.0" text="Adresse :" GridPane.rowIndex="3" />
+            <Label prefWidth="100.0" text="N° de Téléphone :" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
