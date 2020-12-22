@@ -1,15 +1,11 @@
 package sample;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import java.io.IOException;
+import sample.Controlleurs.Controller;
 
 public class Main extends Application {
     protected Stage primaryStage; // Protected Stage to allow link to another class
@@ -25,7 +21,9 @@ public class Main extends Application {
         this.primaryStage.show();
         Controller controle=(Controller) loader.getController(); // Initialize the Controller of start page
         controle.setMainApp(this); // Link the controller to the Main
-
+    }
+    public Stage getprimaryStage(){
+        return primaryStage;
     }
 
     public static void main(String[] args) {

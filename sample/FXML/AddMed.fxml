@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlleurs.AddMedController">
    <children>
       <Button layoutX="14.0" layoutY="583.0" mnemonicParsing="false" text="Retour Menu Principal" />
       <Button layoutX="710.0" layoutY="595.0" mnemonicParsing="false" text="Valider" />
