@@ -1,8 +1,13 @@
 Tâches à faire :
+https://www.alwaysdata.com/fr/
+créer une bdd sur cette hébergeur gratuit
+
+///
 
 - Créer Classe Usager
 - Créer Classe Media
 - Créer Classe PersonnelBDD ? 
+
 
 /// Classe Traitement SQL 
 
@@ -19,6 +24,7 @@ ex : Class AddUserClass extends LibBDD {
 }
 Faire ceci pour : AddUser, AddMedia, RemUser, RemMedia
 
+///
 - Préparer les .FXML pour Recherche média, Emprunt média (Faire la Scene, Renseigner pour comment créer une nouvelle fenêtre pour afficher les médias avec un Tableview ect..)
 
 - Créer .FXML pour la page authentification, avec son controller, et sa requête SQL préparée pour fetch le compte PersonnelBDD
