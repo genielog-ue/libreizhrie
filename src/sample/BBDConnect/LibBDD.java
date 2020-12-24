@@ -19,9 +19,9 @@ public class LibBDD {
         this.stmt = null;
         this.res = null;
         try {
-            String url = "jdbc:mysql://localhost/ librairie?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC";
-            String user = "librairieAgent";
-            String pwd = "skaven";
+            String url = "jdbc:mysql://mysql-libreizhrie.alwaysdata.net/ libreizhrie_bdd?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=UTC";
+            String user = "222286_gl";
+            String pwd = "UE-genie-log-56";
             connect = DriverManager.getConnection(url, user, pwd);
         } catch (SQLException ex) {
             ex.printStackTrace();
@@ -32,13 +32,13 @@ public class LibBDD {
 
     public void getBDD() {
         try {
-            String requete = "SELECT * FROM Animal";
+            String requete = "SELECT * FROM personnelbdd";
             stmt = connect.createStatement();
             res = stmt.executeQuery(requete);
             while (res.next()) {
-                System.out.println("ID :" + res.getInt("id"));
-                System.out.println(", Espece: " + res.getString("espece"));
-                System.out.println(", Sexe: " + res.getString("sexe"));
+                System.out.println("ID :" + res.getString("nom"));
+                System.out.println("Espece: " + res.getString("prenom"));
+                System.out.println("Sexe: " + res.getString("mdp"));
             }
             res.close();
         } catch (SQLException throwables) {
