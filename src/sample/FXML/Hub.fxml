@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlleurs.Controller">
+   <children>
+      <Label layoutX="293.0" layoutY="14.0" text="Logiciel LiBreizehRie">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="AddUser" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#ButtonChangeScene" text="Ajouter un Usager" userData="FXML/AddUser.fxml" />
+      <Button fx:id="RemUser" layoutX="16.0" layoutY="145.0" mnemonicParsing="false" text="Retirer un Usager" onAction="#ButtonChangeScene" userData="FXML/RemUser.fxml" />
+      <Button fx:id="AddMed" layoutX="17.0" layoutY="194.0" mnemonicParsing="false" text="Ajouter un média" onAction="#ButtonChangeScene" userData="FXML/AddMed.fxml"/>
+      <Button fx:id="RemMed" layoutX="17.0" layoutY="243.0" mnemonicParsing="false" text="Supprimer un média" onAction="#ButtonChangeScene" userData="FXML/RemMed.fxml"/>
+      <Button fx:id="EmprMed" layoutX="16.0" layoutY="293.0" mnemonicParsing="false" text="Emprunter un exemplaire" onAction="#ButtonChangeScene" userData="FXML/EmprMed.fxml"/>
+      <Button fx:id="RetMed" layoutX="17.0" layoutY="348.0" mnemonicParsing="false" text="Retourner un exemplaire" onAction="#ButtonChangeScene" userData="FXML/RetMed.fxml"/>
+      <Button fx:id="RechMed" layoutX="601.0" layoutY="100.0" mnemonicParsing="false" text="Recherche media" onAction="#ButtonChangeScene" userData="FXML/RechMed.fxml"/>
+      <Button fx:id="ReservMed" layoutX="597.0" layoutY="145.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="107.0" text="Reserver media" onAction="#ButtonChangeScene" userData="FXML/ResMed.fxml"/>
+   </children>
+</AnchorPane>
