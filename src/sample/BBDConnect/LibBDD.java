@@ -1,5 +1,7 @@
 package sample.BBDConnect;
+
 import java.sql.*;
+
 public class LibBDD {
     protected Connection connect;
     protected Statement stmt;
@@ -27,15 +29,16 @@ public class LibBDD {
         }
 
     }
-    public void getBDD(){
+
+    public void getBDD() {
         try {
             String requete = "SELECT * FROM Animal";
-            stmt=connect.createStatement();
-            res=stmt.executeQuery(requete);
-            while(res.next()){
-                System.out.println("ID :"+res.getInt("id"));
-                System.out.println(", Espece: "+res.getString("espece"));
-                System.out.println(", Sexe: "+res.getString("sexe"));
+            stmt = connect.createStatement();
+            res = stmt.executeQuery(requete);
+            while (res.next()) {
+                System.out.println("ID :" + res.getInt("id"));
+                System.out.println(", Espece: " + res.getString("espece"));
+                System.out.println(", Sexe: " + res.getString("sexe"));
             }
             res.close();
         } catch (SQLException throwables) {

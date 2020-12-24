@@ -4,29 +4,32 @@
 <?import javafx.scene.layout.*?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlleurs.RechMediaController">
-   <children>
-      <Label layoutX="246.0" layoutY="14.0" text="Recherche un média" />
-      <GridPane layoutX="114.0" layoutY="52.0" prefHeight="254.0" prefWidth="373.0">
-        <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <Label text="Type" />
-            <Label text="Titre" GridPane.rowIndex="1" />
-            <Label text="Genre" GridPane.rowIndex="2" />
-            <TextField GridPane.columnIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
-         </children>
-      </GridPane>
-      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Retour Menu Principal" onAction="#ButtonChangeScene" userData="FXML/Hub.fxml"/>
-      <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" text="Valider" />
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controlleurs.RechMediaController">
+    <children>
+        <Label layoutX="246.0" layoutY="14.0" text="Recherche un média"/>
+        <GridPane layoutX="114.0" layoutY="52.0" prefHeight="254.0" prefWidth="373.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="90.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES"/>
+                <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <Label text="Type"/>
+                <Label text="Titre" GridPane.rowIndex="1"/>
+                <Label text="Genre" GridPane.rowIndex="2"/>
+                <TextField GridPane.columnIndex="1"/>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <TextField GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            </children>
+        </GridPane>
+        <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Retour Menu Principal"
+                onAction="#ButtonChangeScene" userData="FXML/Hub.fxml"/>
+        <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" text="Valider"/>
+    </children>
 </AnchorPane>
