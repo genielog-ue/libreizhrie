@@ -3,10 +3,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="634.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlleurs.AddMedController">
    <children>
-      <Button layoutX="14.0" layoutY="583.0" mnemonicParsing="false" text="Retour Menu Principal" />
+      <Button layoutX="14.0" layoutY="583.0" mnemonicParsing="false" onAction="#ButtonChangeScene" userData="FXML/Hub.fxml" text="Retour Menu Principal" />
       <Button layoutX="710.0" layoutY="595.0" mnemonicParsing="false" text="Valider" />
       <Label layoutX="340.0" layoutY="6.0" text="Ajouter un média :" />
       <GridPane layoutX="53.0" layoutY="74.0" prefHeight="440.0" prefWidth="672.0">

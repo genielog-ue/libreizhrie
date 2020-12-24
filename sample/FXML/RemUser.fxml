@@ -6,7 +6,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlleurs.RemUserController">
    <children>
-      <Button layoutX="14.0" layoutY="485.0" mnemonicParsing="false" text="Retour Menu Principal" />
+      <Button layoutX="14.0" layoutY="485.0" mnemonicParsing="false" text="Retour Menu Principal" onAction="#ButtonChangeScene" userData="FXML/Hub.fxml"/>
       <Button layoutX="583.0" layoutY="178.0" mnemonicParsing="false" text="Valider" />
       <GridPane layoutX="100.0" layoutY="67.0" prefHeight="111.0" prefWidth="536.0">
         <columnConstraints>

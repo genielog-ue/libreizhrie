@@ -26,6 +26,6 @@
             </children>
         </GridPane>
         <Button layoutX="534.0" layoutY="361.0" mnemonicParsing="false" text="Valider" />
-        <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Retour Menu Principal" />
+        <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" text="Retour Menu Principal" onAction="#ButtonChangeScene" userData="FXML/Hub.fxml" />
     </children>
 </AnchorPane>
