@@ -26,7 +26,7 @@ public class Main extends Application {
         control.setMainApp(this); // Link the controller to the Main
     }
 
-    public Stage getprimaryStage() {
+    public Stage getPrimaryStage() {
         return primaryStage;
     }
 

@@ -22,7 +22,7 @@ public class Controller {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(Main.class.getResource(fxml)); // Set the loader to FXML path
         Parent pane = loader.load();
-        Mainapp.getprimaryStage().getScene().setRoot(pane); // Set the content of Main Stage to the fxml loaded
+        Mainapp.getPrimaryStage().getScene().setRoot(pane); // Set the content of Main Stage to the fxml loaded
         Controller controle = (Controller) loader.getController(); // Get the controller of the .fxml file
         controle.setMainApp(Mainapp); // Call by MainApp to give a reference to himself
     }
