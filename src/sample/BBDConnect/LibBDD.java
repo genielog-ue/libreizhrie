@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class LibBDD {
     protected Connection connect;
-    protected Statement stmt;
+    protected PreparedStatement stmt;
     protected ResultSet res;
 
     public LibBDD() throws SQLException {
@@ -29,22 +29,5 @@ public class LibBDD {
         }
 
     }
-
-    public void getBDD() {
-        try {
-            String requete = "SELECT * FROM personnelbdd";
-            stmt = connect.createStatement();
-            res = stmt.executeQuery(requete);
-            while (res.next()) {
-                System.out.println("ID :" + res.getString("nom"));
-                System.out.println("Espece: " + res.getString("prenom"));
-                System.out.println("Sexe: " + res.getString("mdp"));
-            }
-            res.close();
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
-        }
-    }
-
 
 }

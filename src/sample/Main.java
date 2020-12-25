@@ -5,7 +5,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import sample.BBDConnect.LibBDD;
 import sample.Controlleurs.Controller;
 
 import java.awt.*;
@@ -25,8 +24,6 @@ public class Main extends Application {
         this.primaryStage.show();
         Controller control = (Controller) loader.getController(); // Initialize the Controller of start page
         control.setMainApp(this); // Link the controller to the Main
-        LibBDD test=new LibBDD();
-        test.getBDD();
     }
 
     public Stage getPrimaryStage() {
