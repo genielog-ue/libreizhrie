@@ -38,6 +38,9 @@ public class Usager {
 
     }
 
+    public Usager(int idUsager){
+        this.idUsager = idUsager;
+    }
     public String getNom() {
         return nom;
     }

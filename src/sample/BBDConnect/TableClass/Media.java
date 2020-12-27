@@ -36,7 +36,10 @@ public class Media {
         this.titre = titre;
         this.genre = genre;
     }
+    public Media(int idMedia){
 
+        this.idMedia = idMedia;
+    }
     public String getType() {
         return type;
     }
