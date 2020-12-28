@@ -10,10 +10,11 @@ public class ChangeExplMedQuery extends LibBDD {
         super();
     }
     public void ChangeExpl(Media media) throws SQLException {
-        String requete="UPDATE mediabdd SET NbExemplaires=? WHERE idMedia=?";
+        String requete="UPDATE mediabdd SET NbExemplaires=? WHERE idMedia=? AND (SELECT COUNT(NbExemplaires)+? FROM mediabdd)<100000";
         stmt=connect.prepareStatement(requete);
         stmt.setInt(1,media.getNbExemplaires());
         stmt.setInt(2,media.getIdMedia());
+        stmt.setInt(3,media.getNbExemplaires());
         stmt.execute();
     }
 }
