@@ -25,16 +25,21 @@ public class Media {
         this.disponible = disponible;
         this.idMedia = idMedia;
     }
-    public Media(String titre,int idMedia){
-
-        this.titre = titre;
-        this.idMedia = idMedia;
-    }
     public Media(String type,String titre,String genre){
 
         this.type = type;
         this.titre = titre;
         this.genre = genre;
+    }
+    public Media(String titre,int idMedia){
+
+        this.titre = titre;
+        this.idMedia = idMedia;
+    }
+    public Media(int nbExemplaires,int idMedia){
+
+        this.nbExemplaires = nbExemplaires;
+        this.idMedia = idMedia;
     }
     public Media(int idMedia){
 
