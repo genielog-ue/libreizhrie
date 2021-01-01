@@ -3,10 +3,9 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.RechMedSecondaryStage">
    <children>
-      <TableView fx:id="MediaTableView" layoutX="149.0" layoutY="20.0" prefHeight="361.0" prefWidth="359.0">
+      <TableView fx:id="MediaTableView" layoutX="29.0" layoutY="15.0" prefHeight="366.0" prefWidth="548.0">
         <columns>
           <TableColumn prefWidth="75.0" text="C1" />
           <TableColumn prefWidth="75.0" text="C2" />
