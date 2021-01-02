@@ -93,6 +93,8 @@ public class Media {
         this.idMedia = idMedia;
     }
 
+    public int getDisponible(){return disponible;}
+    /*
     public void printAll(){
         System.out.println(type);
         System.out.println(titre);
@@ -102,4 +104,5 @@ public class Media {
         System.out.println(idMedia);
         System.out.println(disponible);
     }
+     */
 }

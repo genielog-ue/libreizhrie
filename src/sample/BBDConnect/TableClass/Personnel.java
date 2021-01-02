@@ -5,12 +5,14 @@ public class Personnel {
     private String prenom;
     private int idPerso;
     private String mdp;
+    private String compte;
 
-    public Personnel(String nom, String prenom, int idPerso, String mdp) {
+    public Personnel(String nom, String prenom, int idPerso, String mdp,String compte) {
         this.nom = nom;
         this.prenom = prenom;
         this.idPerso = idPerso;
         this.mdp = mdp;
+        this.compte = compte;
     }
 
     public String getNom() {
@@ -27,5 +29,13 @@ public class Personnel {
 
     public String getMdp() {
         return mdp;
+    }
+
+    public String getCompte() {
+        return compte;
+    }
+
+    public void setCompte(String compte) {
+        this.compte = compte;
     }
 }

@@ -16,7 +16,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         FXMLLoader loader = new FXMLLoader();
         this.primaryStage = primaryStage; // Set the primaryStage loaded by JavaFX to the Stage var of the class
-        loader.setLocation(Main.class.getResource("FXML/Hub.fxml"));
+        loader.setLocation(Main.class.getResource("FXML/Auth.fxml"));
         Parent root = loader.load();
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize(); // Get The size of the User Screen
         this.primaryStage.setTitle("LibBreizhRie");

@@ -3,7 +3,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.FXML.Auth">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlleurs.AuthController">
    <children>
       <GridPane layoutX="119.0" layoutY="107.0" prefHeight="187.0" prefWidth="362.0">
         <columnConstraints>
@@ -18,10 +18,10 @@
             <Label text="Compte  :" />
             <Label text="Mot de passe :" GridPane.rowIndex="1" />
             <TextField fx:id="CompteField" GridPane.columnIndex="1" />
-            <TextField fx:id="mdpField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="MdpField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
          </children>
       </GridPane>
-      <Button layoutX="455.0" layoutY="294.0" mnemonicParsing="false" text="Valider" />
+      <Button layoutX="455.0" layoutY="294.0" mnemonicParsing="false" onAction="#checkAuth" text="Valider" />
       <Label layoutX="248.0" layoutY="14.0" text="Logiciel LibreizhRie " />
       <Label layoutX="253.0" layoutY="90.0" text="Authentification : " />
    </children>
