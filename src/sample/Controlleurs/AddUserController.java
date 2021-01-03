@@ -26,6 +26,10 @@ public class AddUserController extends Controller {
 
     @FXML
     private void ValidUserAction(ActionEvent event) throws Exception {
+        /**
+         * Méthode faisant le lien entre le formulaire et la classe AddUserQuery
+         * Rajoute un usager dans la BDD
+         */
         String nom = nomTextField.getText();
         String prenom = prenomTextField.getText();
         int age = Integer.parseInt(ageTextField.getText());

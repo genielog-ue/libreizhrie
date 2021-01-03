@@ -24,6 +24,10 @@ public class MediaBorrowController extends Controller {
 
     @FXML
     public void BorrowMediaAction(ActionEvent event) throws SQLException {
+        /**
+         * Méthode liant le formulaire graphique et EmprMedQuery
+         * Permet l'emprunt d'un media par un user
+         */
         int idUser = Integer.parseInt(idUsagerTextField.getText());
         int idMedia = Integer.parseInt(idMediaTextField.getText());
         String typeMedia = (String) typeMediaChoiceBox.getValue();

@@ -21,6 +21,10 @@ public class MediaReturnController extends Controller {
 
     @FXML
     private void ReturnMediaAction(ActionEvent event) throws SQLException {
+        /**
+         * Méthode liant le formulaire à la classe ReturnMedia
+         * Permet de retourner un media
+         */
         int idUsager = Integer.parseInt(idUsagerTextField.getText());
         int idMedia = Integer.parseInt(idMediaTextField.getText());
         Usager user = new Usager(idUsager);

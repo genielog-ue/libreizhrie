@@ -21,7 +21,7 @@ public class EmprMedQuery extends LibBDD {
 
     public void EmprMedQuery(Usager user, Media media, String typeMedia) throws SQLException {
         int age = 0;
-        String firstrequete = "SELECT COUNT(idUsager) FROM T_Emprunt WHERE idUsager=?";
+        String firstrequete = "SELECT COUNT(idUsager) FROM T_Emprunt WHERE idUsager=?"; // Check if User as already Borrow a Media
         stmt = connect.prepareStatement(firstrequete);
         stmt.setInt(1, user.getIdUsager());
         res = stmt.executeQuery();
@@ -30,7 +30,7 @@ public class EmprMedQuery extends LibBDD {
             count = res.getInt(1);
         }
         if (count == 0) {
-            String secondrequete = "SELECT age FROM usagerbdd WHERE idUsager=?";
+            String secondrequete = "SELECT age FROM usagerbdd WHERE idUsager=?"; // Check user age
             stmt = connect.prepareStatement(secondrequete);
             stmt.setInt(1, user.getIdUsager());
             res = stmt.executeQuery();
@@ -49,6 +49,7 @@ public class EmprMedQuery extends LibBDD {
                     "INNER JOIN usagerbdd ON usagerbdd.idUsager=T_Emprunt.idUsager " +
                     "INNER JOIN mediabdd ON mediabdd.idMedia=T_Emprunt.idMedia " +
                     "WHERE usagerbdd.idUsager=? AND mediabdd.Type=? GROUP BY usagerbdd.age,usagerbdd.dateInscription";
+            // Retourne le compte de medias de Type Livre ou DVD  données par le formulaire,  ainsi que l'age et la date d'inscription
             stmt = connect.prepareStatement(requeteCheck);
             stmt.setInt(1, user.getIdUsager());
             stmt.setString(2, typeMedia);
@@ -63,8 +64,8 @@ public class EmprMedQuery extends LibBDD {
             date = date.substring(0, 10);
             LocalDate inscription = LocalDate.parse(date, DateTimeFormatter.ofPattern("yyyy-MM-dd"));
             LocalDate today = LocalDate.now();
-            int years = (int) ChronoUnit.YEARS.between(inscription, today);
-            typeMedia = typeMedia.toUpperCase();
+            int years = (int) ChronoUnit.YEARS.between(inscription, today); // Recupère la différence d'années entre la date d'inscription et la date actuelle
+            typeMedia = typeMedia.toUpperCase(); // Uniformise le string du type de media
             if (age < 18) {
                 if (typeMedia.equals("LIVRE") && compteur < 5) {
                     SendRequest(user, media);

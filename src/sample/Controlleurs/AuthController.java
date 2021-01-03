@@ -21,6 +21,9 @@ public class AuthController extends Controller {
 
     @FXML
     private void checkAuth() throws Exception {
+        /**
+         * Vérifie si le compte et le mot de passe rentrés existent dans la BDD, si oui, permet d'accéder au Hub graphique
+         */
         String compte = CompteField.getText();
         String mdp = MdpField.getText();
         MdpField.setText("");
