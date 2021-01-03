@@ -9,7 +9,7 @@ import sample.BBDConnect.TableClass.Media;
 import java.sql.SQLException;
 
 public class ChangeExplMed extends Controller {
-    public ChangeExplMed(){
+    public ChangeExplMed() {
         super();
     }
 
@@ -23,10 +23,10 @@ public class ChangeExplMed extends Controller {
         /**
          * Méthode : Permet le changement du nombre d'exemplaires disponibles dans la BDD
          */
-        int idMedia=Integer.parseInt(idMediaTextField.getText());
-        int nbExemplaires=Integer.parseInt(nbExemplairesTextField.getText());
-        Media media=new Media(nbExemplaires,idMedia);
-        ChangeExplMedQuery query=new ChangeExplMedQuery();
+        int idMedia = Integer.parseInt(idMediaTextField.getText());
+        int nbExemplaires = Integer.parseInt(nbExemplairesTextField.getText());
+        Media media = new Media(nbExemplaires, idMedia);
+        ChangeExplMedQuery query = new ChangeExplMedQuery();
         query.ChangeExpl(media);
     }
 }

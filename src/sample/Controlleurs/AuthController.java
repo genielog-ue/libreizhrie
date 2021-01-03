@@ -7,10 +7,11 @@ import javafx.scene.control.TextField;
 import sample.BBDConnect.SQLQuery.AuthQuery;
 import sample.BBDConnect.TableClass.Personnel;
 
-public class AuthController extends Controller{
-    public AuthController(){
+public class AuthController extends Controller {
+    public AuthController() {
         super();
     }
+
     @FXML
     private TextField CompteField;
     @FXML
@@ -20,16 +21,15 @@ public class AuthController extends Controller{
 
     @FXML
     private void checkAuth() throws Exception {
-        String compte=CompteField.getText();
-        String mdp=MdpField.getText();
+        String compte = CompteField.getText();
+        String mdp = MdpField.getText();
         MdpField.setText("");
-        Personnel personnel=new Personnel("","",1,mdp,compte);
-        AuthQuery query=new AuthQuery();
-        boolean bool=query.Auth(personnel); // AuthQuery retourne un booleen si le mdp et le compte existe dans la BDD
-        if(bool==true){
+        Personnel personnel = new Personnel("", "", 1, mdp, compte);
+        AuthQuery query = new AuthQuery();
+        boolean bool = query.Auth(personnel); // AuthQuery retourne un booleen si le mdp et le compte existe dans la BDD
+        if (bool == true) {
             changeScene("FXML/Hub.fxml");
-        }
-        else{
+        } else {
             WarningLabel.setVisible(true);
         }
     }

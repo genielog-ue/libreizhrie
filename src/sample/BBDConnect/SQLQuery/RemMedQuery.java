@@ -15,10 +15,10 @@ public class RemMedQuery extends LibBDD {
         /**
          * Retire un media dans la BDD
          */
-        String requete="DELETE FROM mediabdd WHERE idMedia=? AND Titre=?";
-        stmt=connect.prepareStatement(requete);
-        stmt.setInt(1,media.getIdMedia());
-        stmt.setString(2,media.getTitre());
+        String requete = "DELETE FROM mediabdd WHERE idMedia=? AND Titre=?";
+        stmt = connect.prepareStatement(requete);
+        stmt.setInt(1, media.getIdMedia());
+        stmt.setString(2, media.getTitre());
         stmt.execute();
         stmt.close();
         connect.close();

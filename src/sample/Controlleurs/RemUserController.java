@@ -26,10 +26,9 @@ public class RemUserController extends Controller {
         String nom = nomTextField.getText();
         String prenom = prenomTextField.getText();
         int id;
-        if(idUsagerTextField.getText().isEmpty()){
-            id=-1;
-        }
-        else{
+        if (idUsagerTextField.getText().isEmpty()) {
+            id = -1; // Garde Fou pour éviter que la requête supprime le mauvais utilisateur
+        } else {
             id = Integer.parseInt(idUsagerTextField.getText());
         }
         Usager user = new Usager(nom, prenom, id);

@@ -13,14 +13,15 @@ public class Media {
     private int idMedia;
     private int disponible;
 
-    public Media(String type,String titre,String genre,int nbExemplaires,int emplacement){
+    public Media(String type, String titre, String genre, int nbExemplaires, int emplacement) {
         this.type = type;
         this.titre = titre;
         this.genre = genre;
         this.nbExemplaires = nbExemplaires;
         this.emplacement = emplacement;
     }
-    public Media(String type,String titre,String genre,int nbExemplaires,int emplacement,int disponible, int idMedia){
+
+    public Media(String type, String titre, String genre, int nbExemplaires, int emplacement, int disponible, int idMedia) {
         this.type = type;
         this.titre = titre;
         this.genre = genre;
@@ -29,26 +30,31 @@ public class Media {
         this.disponible = disponible;
         this.idMedia = idMedia;
     }
-    public Media(String type,String titre,String genre){
+
+    public Media(String type, String titre, String genre) {
 
         this.type = type;
         this.titre = titre;
         this.genre = genre;
     }
-    public Media(String titre,int idMedia){
+
+    public Media(String titre, int idMedia) {
 
         this.titre = titre;
         this.idMedia = idMedia;
     }
-    public Media(int nbExemplaires,int idMedia){
+
+    public Media(int nbExemplaires, int idMedia) {
 
         this.nbExemplaires = nbExemplaires;
         this.idMedia = idMedia;
     }
-    public Media(int idMedia){
+
+    public Media(int idMedia) {
 
         this.idMedia = idMedia;
     }
+
     public String getType() {
         return type;
     }
@@ -97,6 +103,8 @@ public class Media {
         this.idMedia = idMedia;
     }
 
-    public int getDisponible(){return disponible;}
+    public int getDisponible() {
+        return disponible;
+    }
 
 }

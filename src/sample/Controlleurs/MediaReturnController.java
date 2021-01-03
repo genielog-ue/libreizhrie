@@ -21,12 +21,12 @@ public class MediaReturnController extends Controller {
 
     @FXML
     private void ReturnMediaAction(ActionEvent event) throws SQLException {
-        int idUsager=Integer.parseInt(idUsagerTextField.getText());
-        int idMedia=Integer.parseInt(idMediaTextField.getText());
-        Usager user=new Usager(idUsager);
-        Media media=new Media(idMedia);
-        ReturnMedQuery query=new ReturnMedQuery(); // Appel de la requete pour retourner un media
-        query.ReturnMedia(user,media);
+        int idUsager = Integer.parseInt(idUsagerTextField.getText());
+        int idMedia = Integer.parseInt(idMediaTextField.getText());
+        Usager user = new Usager(idUsager);
+        Media media = new Media(idMedia);
+        ReturnMedQuery query = new ReturnMedQuery(); // Appel de la requete pour retourner un media
+        query.ReturnMedia(user, media);
 
     }
 }

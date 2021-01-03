@@ -14,19 +14,19 @@ public class Usager {
     private int cntEmpLivre;
     private int cntEmpMedia;
 
-    public Usager(String nom,String prenom,int idUsager){
-        this.nom=nom;
-        this.prenom=prenom;
-        this.idUsager=idUsager;
+    public Usager(String nom, String prenom, int idUsager) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.idUsager = idUsager;
     }
 
-    public Usager(String nom,String prenom,int age,String adresse,String telephone){
-        this.nom=nom;
-        this.prenom=prenom;
-        this.age=age;
-        this.adresse=adresse;
-        this.telephone=telephone;
-        this.idUsager= -1;
+    public Usager(String nom, String prenom, int age, String adresse, String telephone) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.age = age;
+        this.adresse = adresse;
+        this.telephone = telephone;
+        this.idUsager = -1;
     }
 
 
@@ -42,9 +42,10 @@ public class Usager {
 
     }
 
-    public Usager(int idUsager){
+    public Usager(int idUsager) {
         this.idUsager = idUsager;
     }
+
     public String getNom() {
         return nom;
     }

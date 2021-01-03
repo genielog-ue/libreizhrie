@@ -11,7 +11,7 @@ public class Personnel {
     private String mdp;
     private String compte;
 
-    public Personnel(String nom, String prenom, int idPerso, String mdp,String compte) {
+    public Personnel(String nom, String prenom, int idPerso, String mdp, String compte) {
         this.nom = nom;
         this.prenom = prenom;
         this.idPerso = idPerso;

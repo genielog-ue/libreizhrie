@@ -13,6 +13,7 @@ public class AddMedController extends Controller {
     public AddMedController() {
         super();
     }
+
     @FXML
     private ChoiceBox typeChoice;
     @FXML
@@ -29,13 +30,13 @@ public class AddMedController extends Controller {
         /**
          * Méthode permettant de faire le lien entre le formulaire et l'ajout d'un Media par la classe AddMedQuery
          */
-        String type= (String) typeChoice.getValue();
-        String titre=TitreField.getText();
-        String genre=GenreField.getText();
-        int nbExemplaire=Integer.parseInt(NbExemplairesField.getText());
-        int emplacement=Integer.parseInt(EmplacementField.getText());
-        Media media=new Media(type,titre,genre,nbExemplaire,emplacement);
-        AddMedQuery query=new AddMedQuery();
+        String type = (String) typeChoice.getValue();
+        String titre = TitreField.getText();
+        String genre = GenreField.getText();
+        int nbExemplaire = Integer.parseInt(NbExemplairesField.getText());
+        int emplacement = Integer.parseInt(EmplacementField.getText());
+        Media media = new Media(type, titre, genre, nbExemplaire, emplacement);
+        AddMedQuery query = new AddMedQuery();
         query.AddMed(media);
     }
 
