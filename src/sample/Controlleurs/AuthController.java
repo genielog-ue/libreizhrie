@@ -25,7 +25,7 @@ public class AuthController extends Controller{
         MdpField.setText("");
         Personnel personnel=new Personnel("","",1,mdp,compte);
         AuthQuery query=new AuthQuery();
-        boolean bool=query.Auth(personnel);
+        boolean bool=query.Auth(personnel); // AuthQuery retourne un booleen si le mdp et le compte existe dans la BDD
         if(bool==true){
             changeScene("FXML/Hub.fxml");
         }

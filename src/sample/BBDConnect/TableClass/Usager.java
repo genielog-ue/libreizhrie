@@ -1,6 +1,10 @@
 package sample.BBDConnect.TableClass;
 
 public class Usager {
+    /**
+     * Classe Usager permettant de stocker les données d'un usager récupérée dans la BDD
+     * Méthodes : Setters et Getters pour chaque variable
+     */
     private String nom;
     private String prenom;
     private int age;

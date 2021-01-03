@@ -11,13 +11,20 @@ public class RechMedQuery extends LibBDD {
         super();
     }
     public ArrayList<Media> RechMedQuery(Media recherche) throws SQLException {
+        /**
+         * Méthode permettant de récupérer une ArrayList de médias selon les données entrées dans le formulaire de recherche
+         * Retour : Arraylist<Media>
+         */
         ArrayList<Media> tmpList = new ArrayList<Media>();
-        ArrayList<String> parameterList=new ArrayList<String>();
+        ArrayList<String> parameterList=new ArrayList<String>(); // ArrayList qui contiendra la liste d'arguments rentrées
         String Type=recherche.getType();
         String Titre=recherche.getTitre();
         String Genre=recherche.getGenre();
 
         String requete = "SELECT * FROM mediabdd ";
+        /*
+        Pour éviter de construire des méthodes multiples, on construit la requête selon les données entrées
+         */
         if(!(Type.isEmpty())){
             parameterList.add("Type=(?)");
         }
@@ -35,8 +42,12 @@ public class RechMedQuery extends LibBDD {
             }
             requete = requete.substring(0, requete.length() - 5);
         }
+        ///
         stmt=connect.prepareStatement(requete);
         int cnt=1;
+        /*
+        Vérification si les paramètres d'entrées sont vides ou non, var cnt permet de placer les variables vers le bon "?"
+         */
         if(!(Type.isEmpty())){
             stmt.setString(cnt,Type);
             cnt++;
@@ -48,6 +59,7 @@ public class RechMedQuery extends LibBDD {
         if(!(Genre.isEmpty())){
             stmt.setString(cnt,Genre);
         }
+        ///
         res=stmt.executeQuery();
         while(res.next()){
             Titre=res.getString(1);

@@ -11,7 +11,11 @@ public class AuthQuery extends LibBDD {
         super();
     }
    public boolean Auth(Personnel personnel) throws SQLException {
-        String requete="SELECT (EXISTS(SELECT 1 FROM personnelbdd WHERE compte=? AND mdp=PASSWORD(?)))";
+       /**
+        * Vérifie l'existence d'un compte Personnel
+        * Retour boolean Vrai si les données rentrées dans le formulaire existe dans la BDD
+        */
+       String requete="SELECT (EXISTS(SELECT 1 FROM personnelbdd WHERE compte=? AND mdp=PASSWORD(?)))";
         stmt=connect.prepareStatement(requete);
         stmt.setString(1,personnel.getCompte());
         stmt.setString(2,personnel.getMdp());

@@ -25,7 +25,7 @@ public class MediaReturnController extends Controller {
         int idMedia=Integer.parseInt(idMediaTextField.getText());
         Usager user=new Usager(idUsager);
         Media media=new Media(idMedia);
-        ReturnMedQuery query=new ReturnMedQuery();
+        ReturnMedQuery query=new ReturnMedQuery(); // Appel de la requete pour retourner un media
         query.ReturnMedia(user,media);
 
     }

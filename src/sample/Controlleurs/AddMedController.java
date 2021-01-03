@@ -26,6 +26,9 @@ public class AddMedController extends Controller {
 
     @FXML
     private void AddMedAction(ActionEvent event) throws SQLException {
+        /**
+         * Méthode permettant de faire le lien entre le formulaire et l'ajout d'un Media par la classe AddMedQuery
+         */
         String type= (String) typeChoice.getValue();
         String titre=TitreField.getText();
         String genre=GenreField.getText();

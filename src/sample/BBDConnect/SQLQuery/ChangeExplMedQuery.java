@@ -10,6 +10,9 @@ public class ChangeExplMedQuery extends LibBDD {
         super();
     }
     public void ChangeExpl(Media media) throws SQLException {
+        /**
+         * Permet de changer le nombre d'exemplaires d'un media dans la limite des 100 000 exemplaires
+         */
         String requete="UPDATE mediabdd SET NbExemplaires=? WHERE idMedia=? AND (SELECT COUNT(NbExemplaires)+? FROM mediabdd)<100000";
         stmt=connect.prepareStatement(requete);
         stmt.setInt(1,media.getNbExemplaires());

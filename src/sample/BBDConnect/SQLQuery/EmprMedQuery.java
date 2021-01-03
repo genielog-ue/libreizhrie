@@ -10,7 +10,10 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 
 public class EmprMedQuery extends LibBDD {
-
+    /**
+     * Requete pour emprunter un livre
+     * @throws SQLException
+     */
     public EmprMedQuery() throws SQLException {
         super();
     }

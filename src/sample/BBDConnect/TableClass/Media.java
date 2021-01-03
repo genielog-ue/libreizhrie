@@ -1,6 +1,10 @@
 package sample.BBDConnect.TableClass;
 
 public class Media {
+    /**
+     * Classe Media utilisée pour stocker les données récupérées dans la BDD
+     * Méthodes : Setters et Getters pour chaque variable
+     */
     private String type;
     private String titre;
     private String genre;
@@ -94,15 +98,5 @@ public class Media {
     }
 
     public int getDisponible(){return disponible;}
-    /*
-    public void printAll(){
-        System.out.println(type);
-        System.out.println(titre);
-        System.out.println(genre);
-        System.out.println(nbExemplaires);
-        System.out.println(emplacement);
-        System.out.println(idMedia);
-        System.out.println(disponible);
-    }
-     */
+
 }

@@ -7,6 +7,9 @@ import sample.BBDConnect.SQLQuery.RemUserQuery;
 import sample.BBDConnect.TableClass.Usager;
 
 public class RemUserController extends Controller {
+    /**
+     * Controller pour retirer un utilisateur
+     */
     public RemUserController() {
         super();
     }

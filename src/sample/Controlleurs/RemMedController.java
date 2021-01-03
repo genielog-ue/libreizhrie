@@ -20,6 +20,10 @@ public class RemMedController extends Controller {
 
     @FXML
     private void RemMedAction(ActionEvent event) throws SQLException {
+        /**
+         * Méthode appelée sur un bouton de validation permettant d'envoyer une requête
+         * pour retirer un media de la BDD
+         */
         String titre= TitreMed.getText();
         int id=Integer.parseInt(idMed.getText());
         Media media=new Media(titre,id);

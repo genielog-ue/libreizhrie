@@ -20,6 +20,9 @@ public class ChangeExplMed extends Controller {
 
     @FXML
     private void ChangeExplMedAction(ActionEvent event) throws SQLException {
+        /**
+         * Méthode : Permet le changement du nombre d'exemplaires disponibles dans la BDD
+         */
         int idMedia=Integer.parseInt(idMediaTextField.getText());
         int nbExemplaires=Integer.parseInt(nbExemplairesTextField.getText());
         Media media=new Media(nbExemplaires,idMedia);

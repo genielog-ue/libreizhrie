@@ -8,6 +8,11 @@ public class LibBDD {
     protected ResultSet res;
 
     public LibBDD() throws SQLException {
+        /**
+         * Classe LibBDD
+         * Rôle : Permet de se connecter à la base de données
+         * Super classe de toutes les Classes *Query
+         */
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");

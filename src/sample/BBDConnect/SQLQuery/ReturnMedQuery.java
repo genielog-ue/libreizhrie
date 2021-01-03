@@ -11,6 +11,9 @@ public class ReturnMedQuery extends LibBDD {
         super();
     }
     public void ReturnMedia(Usager user, Media media) throws SQLException {
+        /**
+         * Permet de retirer l'emprunt d'un media par un utilisateur dans la BDD
+         */
         String requete="DELETE FROM T_Emprunt WHERE idUsager=? and idMedia=?";
         stmt=connect.prepareStatement(requete);
         stmt.setInt(1,user.getIdUsager());

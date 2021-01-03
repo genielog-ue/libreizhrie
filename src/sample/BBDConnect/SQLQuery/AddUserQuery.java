@@ -11,6 +11,9 @@ public class AddUserQuery extends LibBDD {
         super();
     }
     public void AddUser(Usager newUser) throws SQLException {
+        /**
+         * Rajout d'un usager dans la BDD
+         */
         String requete="INSERT INTO usagerbdd (nom,prenom,age,adresse,telephone)" +
                 "VALUES (?,?,?,?,?)";
         stmt=connect.prepareStatement(requete);

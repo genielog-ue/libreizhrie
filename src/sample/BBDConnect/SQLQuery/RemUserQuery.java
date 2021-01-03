@@ -10,6 +10,9 @@ public class RemUserQuery extends LibBDD {
         super();
     }
     public void RemUser(Usager user) throws SQLException {
+        /**
+         * Retire un utilisateur dans la BDD
+         */
         String requete="DELETE FROM usagerbdd WHERE nom=? AND prenom=? OR idUsager=?";
         stmt=connect.prepareStatement(requete);
         stmt.setString(1,user.getNom());
