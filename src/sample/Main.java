@@ -11,7 +11,7 @@ import java.awt.*;
 
 public class Main extends Application {
     /**
-     * Test
+     * Classe principale, permet de lancer JavaFX
      */
     protected Stage primaryStage; // Protected Stage to allow link to another class
 

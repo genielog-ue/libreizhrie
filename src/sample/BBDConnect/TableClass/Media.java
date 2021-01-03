@@ -1,6 +1,10 @@
 package sample.BBDConnect.TableClass;
 
 public class Media {
+    /**
+     * Classe Media utilisée pour stocker les données récupérées dans la BDD
+     * Méthodes : Setters et Getters pour chaque variable
+     */
     private String type;
     private String titre;
     private String genre;
@@ -9,14 +13,15 @@ public class Media {
     private int idMedia;
     private int disponible;
 
-    public Media(String type,String titre,String genre,int nbExemplaires,int emplacement){
+    public Media(String type, String titre, String genre, int nbExemplaires, int emplacement) {
         this.type = type;
         this.titre = titre;
         this.genre = genre;
         this.nbExemplaires = nbExemplaires;
         this.emplacement = emplacement;
     }
-    public Media(String type,String titre,String genre,int nbExemplaires,int emplacement,int disponible, int idMedia){
+
+    public Media(String type, String titre, String genre, int nbExemplaires, int emplacement, int disponible, int idMedia) {
         this.type = type;
         this.titre = titre;
         this.genre = genre;
@@ -25,26 +30,31 @@ public class Media {
         this.disponible = disponible;
         this.idMedia = idMedia;
     }
-    public Media(String type,String titre,String genre){
+
+    public Media(String type, String titre, String genre) {
 
         this.type = type;
         this.titre = titre;
         this.genre = genre;
     }
-    public Media(String titre,int idMedia){
+
+    public Media(String titre, int idMedia) {
 
         this.titre = titre;
         this.idMedia = idMedia;
     }
-    public Media(int nbExemplaires,int idMedia){
+
+    public Media(int nbExemplaires, int idMedia) {
 
         this.nbExemplaires = nbExemplaires;
         this.idMedia = idMedia;
     }
-    public Media(int idMedia){
+
+    public Media(int idMedia) {
 
         this.idMedia = idMedia;
     }
+
     public String getType() {
         return type;
     }
@@ -93,16 +103,8 @@ public class Media {
         this.idMedia = idMedia;
     }
 
-    public int getDisponible(){return disponible;}
-    /*
-    public void printAll(){
-        System.out.println(type);
-        System.out.println(titre);
-        System.out.println(genre);
-        System.out.println(nbExemplaires);
-        System.out.println(emplacement);
-        System.out.println(idMedia);
-        System.out.println(disponible);
+    public int getDisponible() {
+        return disponible;
     }
-     */
+
 }

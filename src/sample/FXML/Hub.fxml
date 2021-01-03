@@ -4,21 +4,32 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controlleurs.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0"
+            prefWidth="888.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controlleurs.Controller">
     <children>
         <Label layoutX="293.0" layoutY="14.0" text="Logiciel LiBreizehRie">
             <font>
-                <Font size="24.0" />
+                <Font size="24.0"/>
             </font>
         </Label>
-        <Button fx:id="AddUser" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#ButtonChangeScene" text="Ajouter un Usager" userData="FXML/AddUser.fxml" />
-        <Button fx:id="RemUser" layoutX="16.0" layoutY="145.0" mnemonicParsing="false" onAction="#ButtonChangeScene" text="Retirer un Usager" userData="FXML/RemUser.fxml" />
-        <Button fx:id="AddMed" layoutX="17.0" layoutY="271.0" mnemonicParsing="false" onAction="#ButtonChangeScene" text="Ajouter un média" userData="FXML/AddMed.fxml" />
-        <Button fx:id="RemMed" layoutX="16.0" layoutY="359.0" mnemonicParsing="false" onAction="#ButtonChangeScene" text="Supprimer un média" userData="FXML/RemMed.fxml" />
-        <Button fx:id="EmprMed" layoutX="17.0" layoutY="418.0" mnemonicParsing="false" onAction="#ButtonChangeScene" text="Emprunter un exemplaire" userData="FXML/EmprMed.fxml" />
-        <Button fx:id="RetMed" layoutX="18.0" layoutY="457.0" mnemonicParsing="false" onAction="#ButtonChangeScene" text="Retourner un exemplaire" userData="FXML/RetMed.fxml" />
-        <Button fx:id="RechMed" layoutX="601.0" layoutY="100.0" mnemonicParsing="false" onAction="#ButtonChangeScene" text="Recherche media" userData="FXML/RechMed.fxml" />
-        <Button fx:id="ReservMed" layoutX="597.0" layoutY="145.0" mnemonicParsing="false" onAction="#ButtonChangeScene" prefHeight="25.0" prefWidth="107.0" text="Reserver media" userData="FXML/ResMed.fxml" />
-      <Button fx:id="AjoutExemMed" layoutX="18.0" layoutY="312.0" mnemonicParsing="false" onAction="#ButtonChangeScene" text="Ajouter un exemplaire" userData="FXML/AddExplMed.fxml" />
+        <Button fx:id="AddUser" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#ButtonChangeScene"
+                text="Ajouter un Usager" userData="FXML/AddUser.fxml"/>
+        <Button fx:id="RemUser" layoutX="16.0" layoutY="145.0" mnemonicParsing="false" onAction="#ButtonChangeScene"
+                text="Retirer un Usager" userData="FXML/RemUser.fxml"/>
+        <Button fx:id="AddMed" layoutX="17.0" layoutY="271.0" mnemonicParsing="false" onAction="#ButtonChangeScene"
+                text="Ajouter un média" userData="FXML/AddMed.fxml"/>
+        <Button fx:id="RemMed" layoutX="16.0" layoutY="359.0" mnemonicParsing="false" onAction="#ButtonChangeScene"
+                text="Supprimer un média" userData="FXML/RemMed.fxml"/>
+        <Button fx:id="EmprMed" layoutX="17.0" layoutY="418.0" mnemonicParsing="false" onAction="#ButtonChangeScene"
+                text="Emprunter un exemplaire" userData="FXML/EmprMed.fxml"/>
+        <Button fx:id="RetMed" layoutX="18.0" layoutY="457.0" mnemonicParsing="false" onAction="#ButtonChangeScene"
+                text="Retourner un exemplaire" userData="FXML/RetMed.fxml"/>
+        <Button fx:id="RechMed" layoutX="601.0" layoutY="100.0" mnemonicParsing="false" onAction="#ButtonChangeScene"
+                text="Recherche media" userData="FXML/RechMed.fxml"/>
+        <Button fx:id="ReservMed" layoutX="597.0" layoutY="145.0" mnemonicParsing="false" onAction="#ButtonChangeScene"
+                prefHeight="25.0" prefWidth="107.0" text="Reserver media" userData="FXML/ResMed.fxml"/>
+        <Button fx:id="AjoutExemMed" layoutX="18.0" layoutY="312.0" mnemonicParsing="false"
+                onAction="#ButtonChangeScene" text="Ajouter un exemplaire" userData="FXML/AddExplMed.fxml"/>
     </children>
 </AnchorPane>
