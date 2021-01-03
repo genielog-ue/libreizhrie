@@ -24,7 +24,7 @@
                 <TextField fx:id="idUsagerTextField" GridPane.columnIndex="1" />
                 <TextField fx:id="idMediaTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <Label text="Type de média" GridPane.rowIndex="2" />
-                <ChoiceBox fx:id="typeChoice" prefWidth="150.0" value="Livre" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <ChoiceBox fx:id="typeMediaChoiceBox" prefWidth="150.0" value="Livre" GridPane.columnIndex="1" GridPane.rowIndex="2">
                 <items>
                 <FXCollections fx:factory="observableArrayList">
                     <String fx:value="Livre" />
