@@ -98,6 +98,5 @@ public class EmprMedQuery extends LibBDD {
         stmt.close();
         connect.close();
     }
-
     }
 
