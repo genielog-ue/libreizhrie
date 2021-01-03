@@ -16,5 +16,7 @@ public class RemUserQuery extends LibBDD {
         stmt.setString(2,user.getPrenom());
         stmt.setInt(3,user.getIdUsager());
         stmt.execute();
+        stmt.close();
+        connect.close();
     }
 }

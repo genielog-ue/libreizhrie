@@ -13,12 +13,14 @@
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
             <Label text="Compte  :" />
             <Label text="Mot de passe :" GridPane.rowIndex="1" />
             <TextField fx:id="CompteField" GridPane.columnIndex="1" />
-            <TextField fx:id="MdpField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField fx:id="MdpField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="WarningLabel" disable="true" text="Votre Mot de Passe est invalide !" textFill="RED" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       <Button layoutX="455.0" layoutY="294.0" mnemonicParsing="false" onAction="#checkAuth" text="Valider" />

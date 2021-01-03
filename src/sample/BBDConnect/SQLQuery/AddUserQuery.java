@@ -20,6 +20,8 @@ public class AddUserQuery extends LibBDD {
         stmt.setString(4,newUser.getAdresse());
         stmt.setString(5,newUser.getTelephone());
         stmt.execute();
+        stmt.close();
+        connect.close();
 
     }
 }

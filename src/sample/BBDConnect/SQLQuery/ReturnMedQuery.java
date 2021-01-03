@@ -16,5 +16,7 @@ public class ReturnMedQuery extends LibBDD {
         stmt.setInt(1,user.getIdUsager());
         stmt.setInt(2,media.getIdMedia());
         stmt.execute();
+        stmt.close();
+        connect.close();
     }
 }

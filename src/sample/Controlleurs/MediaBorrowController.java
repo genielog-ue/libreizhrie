@@ -2,6 +2,7 @@ package sample.Controlleurs;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 import sample.BBDConnect.SQLQuery.EmprMedQuery;
 import sample.BBDConnect.TableClass.Media;
@@ -19,13 +20,16 @@ public class MediaBorrowController extends Controller {
     @FXML
     private TextField idMediaTextField;
     @FXML
+    private ChoiceBox typeMediaChoiceBox;
+    @FXML
     public void BorrowMediaAction(ActionEvent event) throws SQLException {
         int idUser=Integer.parseInt(idUsagerTextField.getText());
         int idMedia=Integer.parseInt(idMediaTextField.getText());
+        String typeMedia=(String) typeMediaChoiceBox.getValue();
         Media media=new Media(idMedia);
         Usager usager=new Usager(idUser);
         EmprMedQuery query=new EmprMedQuery();
-        query.EmprMedQuery(usager,media);
+        query.EmprMedQuery(usager,media,typeMedia);
 
 
     }

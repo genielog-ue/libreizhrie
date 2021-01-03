@@ -31,6 +31,8 @@ public class AddMedQuery extends LibBDD {
             stmt.setInt(4, media.getEmplacement());
             stmt.setInt(5, media.getNbExemplaires());
             stmt.execute();
+            stmt.close();
+            connect.close();
         }
     }
 }

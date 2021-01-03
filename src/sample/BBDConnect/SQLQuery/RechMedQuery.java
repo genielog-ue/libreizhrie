@@ -59,7 +59,8 @@ public class RechMedQuery extends LibBDD {
             int id=res.getInt(7);
             tmpList.add(new Media(Type,Titre,Genre,nbExemplaires,emplacement,dispo,id));
         }
-
+        stmt.close();
+        connect.close();
         return tmpList;
     }
 }

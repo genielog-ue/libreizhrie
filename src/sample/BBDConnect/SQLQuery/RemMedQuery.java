@@ -17,6 +17,8 @@ public class RemMedQuery extends LibBDD {
         stmt.setInt(1,media.getIdMedia());
         stmt.setString(2,media.getTitre());
         stmt.execute();
+        stmt.close();
+        connect.close();
 
     }
 

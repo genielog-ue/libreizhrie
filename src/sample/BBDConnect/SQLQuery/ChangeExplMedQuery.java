@@ -16,5 +16,7 @@ public class ChangeExplMedQuery extends LibBDD {
         stmt.setInt(2,media.getIdMedia());
         stmt.setInt(3,media.getNbExemplaires());
         stmt.execute();
+        stmt.close();
+        connect.close();
     }
 }

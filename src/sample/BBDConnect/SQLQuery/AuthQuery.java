@@ -16,10 +16,12 @@ public class AuthQuery extends LibBDD {
         stmt.setString(1,personnel.getCompte());
         stmt.setString(2,personnel.getMdp());
         res=stmt.executeQuery();
-        int bool=0;
+        boolean bool=false;
         while(res.next()){
-            bool=res.getInt(1);
+            bool=res.getInt(1)!=0;
         }
-       return bool != 0;
+       stmt.close();
+       connect.close();
+       return bool;
     }
 }
